@@ -15,8 +15,27 @@
   }
   
   .glass-button {
-    @apply bg-brand-accent/10 hover:bg-brand-accent/20 border border-brand-accent/30 text-brand-accent transition-all duration-300;
+    @apply bg-brand-accent/10 hover:bg-brand-accent/20 border border-brand-accent/30 text-brand-accent backdrop-blur-md transition-all duration-300;
   }
+}
+
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+  animation: blob 7s infinite alternate ease-in-out;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
 }
 
 /* Custom Scrollbar for sleek look */

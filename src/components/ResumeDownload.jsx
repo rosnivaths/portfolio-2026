@@ -8,8 +8,8 @@ const ResumeDownload = () => {
   const handleDownload = () => {
     setIsGenerating(true);
     
-    // The target element is our main portfolio content
-    const element = document.getElementById('portfolio-content');
+    // The target element is our hidden printable resume template
+    const element = document.getElementById('printable-resume');
     
     if (!element) {
       console.error('Portfolio content not found');
@@ -18,11 +18,13 @@ const ResumeDownload = () => {
     }
     
     const opt = {
-      margin:       10,
-      filename:     'ROSSopheak_Final.pdf',
+      margin:       0,
+      filename:     'ROS_Sopheak_Final.pdf',
       image:        { type: 'jpeg', quality: 0.98 },
       html2canvas:  { scale: 2, useCORS: true, logging: false },
-      jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      pagebreak:    { mode: 'css', avoid: '.resume-section' },
+      enableLinks:  true
     };
 
     // New Promise-based usage:
