@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-slate-200 antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-brand-card backdrop-blur-md border border-brand-border shadow-xl;
+  }
+  
+  .glass-button {
+    @apply bg-brand-accent/10 hover:bg-brand-accent/20 border border-brand-accent/30 text-brand-accent transition-all duration-300;
+  }
+}
+
+/* Custom Scrollbar for sleek look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; 
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; 
+}
+
+/* Ensure body doesn't overflow horizontally */
+html, body {
+  overflow-x: hidden;
+}
