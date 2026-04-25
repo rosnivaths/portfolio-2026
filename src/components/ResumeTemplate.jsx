@@ -4,8 +4,8 @@ import React from 'react';
 const ResumeTemplate = React.forwardRef((props, ref) => {
   return (
     <div className="fixed top-[10000px] left-[10000px] opacity-0 pointer-events-none z-[-50]">
-      <div 
-        ref={ref} 
+      <div
+        ref={ref}
         id="printable-resume"
         style={{
           width: '210mm',
@@ -18,12 +18,13 @@ const ResumeTemplate = React.forwardRef((props, ref) => {
       >
         {/* ================= PAGE 1 ================= */}
         <div style={{ padding: '12mm 15mm 0 15mm', boxSizing: 'border-box', height: '296mm', overflow: 'hidden' }}>
-          
+
           {/* Header Section */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '20px', backgroundColor: '#f8fafc', padding: '15px 20px', borderRadius: '12px', marginBottom: '18px', borderBottom: '4px solid #0ea5e9' }}>
-            <img 
-              src="/profile.jpg" 
-              alt="ROS Sopheak" 
+            <img
+              src="https://rosnivaths.github.io/portfolio-2026/profile.jpg"
+              crossOrigin="anonymous"
+              alt="ROS Sopheak"
               style={{ width: '110px', height: '110px', borderRadius: '50%', objectFit: 'cover', border: '4px solid #ffffff', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}
             />
             <div style={{ flex: 1 }}>
@@ -60,7 +61,7 @@ const ResumeTemplate = React.forwardRef((props, ref) => {
 
               <div className="resume-section">
                 <h3 style={{ fontSize: '15px', color: '#0f172a', textTransform: 'uppercase', borderBottom: '2px solid #e2e8f0', paddingBottom: '4px', marginBottom: '12px' }}>Professional Experience</h3>
-                
+
                 <div style={{ marginBottom: '14px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '2px' }}>
                     <strong style={{ fontSize: '13px', color: '#0f172a' }}>Lead E-Learning Platform Specialist</strong>
@@ -108,7 +109,7 @@ const ResumeTemplate = React.forwardRef((props, ref) => {
             <div style={{ flex: '0 0 37%' }}>
               <div className="resume-section" style={{ marginBottom: '18px' }}>
                 <h3 style={{ fontSize: '15px', color: '#0f172a', textTransform: 'uppercase', borderBottom: '2px solid #e2e8f0', paddingBottom: '4px', marginBottom: '10px' }}>Core Expertise</h3>
-                
+
                 <div style={{ marginBottom: '10px' }}>
                   <strong style={{ display: 'block', fontSize: '11.5px', color: '#0f172a', marginBottom: '5px' }}>Infrastructure & Cloud</strong>
                   <div style={{ display: 'block' }}>
@@ -145,7 +146,7 @@ const ResumeTemplate = React.forwardRef((props, ref) => {
 
         {/* ================= PAGE 2 ================= */}
         <div style={{ padding: '15mm 15mm 0 15mm', boxSizing: 'border-box' }}>
-          
+
           <div style={{ borderBottom: '2px solid #e2e8f0', paddingBottom: '6px', marginBottom: '18px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
             <h2 style={{ fontSize: '13px', margin: 0, color: '#64748b' }}>ROS SOPHEAK - Professional Resume</h2>
             <span style={{ fontSize: '10px', color: '#94a3b8' }}>Page 2</span>
@@ -156,7 +157,7 @@ const ResumeTemplate = React.forwardRef((props, ref) => {
             <div style={{ flex: '0 0 50%' }}>
               <div className="resume-section">
                 <h3 style={{ fontSize: '15px', color: '#0f172a', textTransform: 'uppercase', borderBottom: '2px solid #e2e8f0', paddingBottom: '4px', marginBottom: '12px' }}>Featured Projects</h3>
-                
+
                 <div style={{ marginBottom: '14px' }}>
                   <strong style={{ fontSize: '12.5px', color: '#0f172a', display: 'block', marginBottom: '2px' }}>AI-Driven E-Learning Hub</strong>
                   <span style={{ fontSize: '10px', color: '#0ea5e9', display: 'block', marginBottom: '4px' }}>React, Tailwind, OpenAI, Node.js</span>
