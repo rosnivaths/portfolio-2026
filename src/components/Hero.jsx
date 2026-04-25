@@ -49,6 +49,7 @@ const Hero = () => {
             <img
               src="profile.jpg"
               alt="ROS Sopheak"
+              crossOrigin="anonymous"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
           </div>
